@@ -1,0 +1,167 @@
+/* 
+==============
+CSS FOR ALL
+============== 
+*/
+
+* {
+    box-sizing: border-box;
+    font-family: 'Lobster';
+}
+
+body {
+    /* background-image: linear-gradient(to right, #E9E9E9, #EBEBEB, #EFEFEF, #F4F4F4, #E7E7E7); */
+    background-image: url("../resources/background.jpg");
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-menu .header {
+    margin-bottom: 50px;
+}
+
+.main-menu .main {
+    margin: 100px 0;
+    margin-left: 145px;
+    width: fit-content;
+}
+
+.header .navigation nav a {
+    margin: 0 10px;
+    width: fit-content;
+    padding: 5px;
+    color: #92140C;
+    border-radius: 10px;
+    border: 2px solid black;
+    /* background-image: linear-gradient(to right, #747274, #E7E7E7); */
+    background-image: url("../resources/background.jpg");
+}
+
+.header .navigation nav a:hover {
+    cursor: pointer;
+    transition: transform 0.5s;
+    transform: translateY(-5px);
+}
+
+
+/* 
+==============
+HEADER
+============== 
+*/
+
+.header .header-inner {
+    display: flex;
+    margin-left: 145px;
+}
+
+.header .header-inner .logo {
+    margin-right: 10px;
+    margin-top: 41px;
+}
+
+.header .header-inner .title {
+    margin: 0 10px;
+    font-size: 30px;
+    font-family: 'Satisfy', cursive;
+}
+
+.header .navigation {
+    width: fit-content;
+    margin: 20px 0;
+    margin-left: 210px;
+}
+
+.header .navigation nav {
+    display: flex;
+}
+
+.header .navigation nav form {
+    margin-top: 2px;
+}
+
+.header .navigation nav form input {
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: transparent;
+}
+
+.material-icons.md-36 {
+    font-size: 36px;
+    background: -webkit-gradient(linear, left top, right bottom, from(#2E2B62), to(#262545));
+    /* -webkit-background-clip: text; */
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* 
+==============
+MAIN
+============== 
+*/
+
+.main-menu .main .item-display {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+
+.main-menu .main .item-display .item {
+    background-color: grey;
+    border: 2px solid #2E2B62;
+    border-radius: 15px;
+    width: 250px;
+    padding: 10px;
+    overflow: hidden;
+    margin: 0 25px;
+    margin-bottom: 20px;
+}
+
+.main-menu .main .item-display .item .item-image {
+    margin-bottom: 5px;
+    margin-left: 45px;
+    width: 50%;
+}
+
+.main-menu .main .item-display .item .item-image img {
+    width: 100px;
+}
+
+.main-menu .main .item-display .item .item-info {
+    width: fit-content;
+    color: black;
+    margin-left: 45px;
+}
+
+.main-menu .main .item-display .item .pricing {
+    color: black;
+    margin-bottom: 25px;
+    width: fit-content;
+    margin-left: 35px;
+}
+
+.main-menu .main .item-display .item .cart-btn {
+    margin-left: 20px;
+    width: fit-content;
+}
+
+.main-menu .main .item-display .item .cart-btn input[type="submit"] {
+    padding: 15px;
+    background-image: url("../resources/background.jpg");
+    color: black;
+    border-radius: 15px;
+}
+
+.main-menu .main .item-display .item .cart-btn input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+@media only screen and (min-width :1024px) {
+    .main-menu .header {
+        display: flex;
+        align-items: center;
+    }
+}

@@ -1,0 +1,261 @@
+/* 
+==============
+CSS FOR ALL
+============== 
+*/
+
+* {
+    box-sizing: border-box;
+    font-family: 'Lobster';
+}
+
+body {
+    /* background-image: linear-gradient(to right, #E9E9E9, #EBEBEB, #EFEFEF, #F4F4F4, #E7E7E7); */
+    background-image: url("../resources/background.jpg");
+}
+
+a {
+    text-decoration: none;
+}
+
+.index .header {
+    margin-bottom: 50px;
+}
+
+.index .main,
+.index .footer {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.header .navigation nav a,
+.main .main-1 .button-1 {
+    margin: 0 10px;
+    width: fit-content;
+    padding: 5px;
+    color: #92140C;
+    border-radius: 10px;
+    border: 2px solid black;
+    /* background-image: linear-gradient(to right, #747274, #E7E7E7); */
+    background-image: url("../resources/background.jpg");
+}
+
+.header .navigation nav a:hover,
+.main .main-1 .button-1:hover {
+    cursor: pointer;
+    transition: transform 0.5s;
+    transform: translateY(-5px);
+}
+
+
+/* 
+==============
+HEADER
+============== 
+*/
+
+.header .header-inner {
+    display: flex;
+    margin-left: 145px;
+}
+
+.header .header-inner .logo {
+    margin-right: 10px;
+    margin-top: 41px;
+}
+
+.header .header-inner .title {
+    margin: 0 10px;
+    font-size: 30px;
+    font-family: 'Satisfy', cursive;
+}
+
+.header .navigation nav {
+    display: flex;
+}
+
+.header .navigation nav form {
+    margin-top: 2px;
+}
+
+.header .navigation nav form input {
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: transparent;
+}
+
+
+/* 
+==============
+MAIN-1
+============== 
+*/
+
+.main,
+.footer {
+    margin-left: 45px;
+    width: fit-content;
+}
+
+.main .main-1 .content {
+    width: fit-content;
+}
+
+.main .main-1 .c1 {
+    margin-left: 150px;
+}
+
+.main .main-1 .c3 {
+    margin-left: 105px;
+}
+
+.main .main-1 .button-1 {
+    margin: 20px 0;
+    width: fit-content;
+    margin-left: 190px;
+}
+
+
+/* 
+==============
+MAIN-2 / MAIN-3
+============== 
+*/
+
+.main .main-2,
+.main .main-3 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main .main-2 .sample,
+.main .main-3 .sample {
+    width: fit-content;
+    height: fit-content;
+    margin: 10px 9px;
+    padding: 14px;
+    border-radius: 20px;
+    border: 2px solid;
+    /* background-image: linear-gradient(to right, #747274, #E7E7E7); */
+    background-image: url("../resources/background.jpg");
+}
+
+.main .main-2 .sample:hover,
+.main .main-3 .sample:hover {
+    cursor: pointer;
+    transition: transform 0.5s;
+    transform: translateY(-5px);
+}
+
+.main .main-2 .sample .info,
+.main .main-3 .sample .info {
+    width: fit-content;
+    margin: 10px 20px;
+}
+
+.main .main-2 .sample img,
+.main .main-3 .sample img {
+    width: 250px;
+}
+
+.main .main-2 .s3,
+.main .main-3 .s3 {
+    margin-top: 30px;
+    margin-left: 130px;
+}
+
+
+/* 
+==============
+MINI-MAIN
+============== 
+*/
+
+.main .mini {
+    margin-left: 150px;
+    width: fit-content;
+}
+
+.main .mini .new-title {
+    width: fit-content;
+}
+
+.main .mini .new-title h4 {
+    font-size: 50px;
+    padding: 10px;
+    background-color: white;
+    text-decoration: underline;
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+.main .mini .new-title h5 {
+    font-size: 40px;
+    margin-left: 32px;
+}
+
+
+/* 
+==============
+FOOTER
+============== 
+*/
+
+.footer {
+    display: flex;
+}
+
+.footer .links,
+.footer .contacts {
+    margin: 10px 20px;
+}
+
+.footer .contacts .more-info,
+.footer .contacts .socials {
+    margin: 10px 0;
+}
+
+@media only screen and (min-width :1024px) {
+    .index .footer {
+        margin-left: 320px;
+    }
+    .index .main {
+        margin-left: 100px;
+    }
+    .index .header {
+        display: flex;
+        align-items: center;
+    }
+    .index .header .header-inner {
+        margin-left: 20px;
+        margin-right: 360px;
+    }
+    .main .main-1 {
+        margin-left: 295px;
+    }
+    .main .main-2,
+    .main .main-3 {
+        display: flex;
+    }
+    .main .main-2 .sample,
+    .main .main-3 .sample {
+        flex-wrap: nowrap;
+        margin: 10px 40px;
+        padding: 14px;
+    }
+    .main .mini {
+        margin-left: 395px;
+    }
+    .footer .contacts {
+        display: flex;
+        margin: 10px 20px;
+    }
+    .footer .contacts .more-info,
+    .footer .contacts .socials {
+        margin: 10px 20px;
+    }
+    .footer .contacts .socials span {
+        display: block;
+    }
+}

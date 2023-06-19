@@ -1,0 +1,242 @@
+/* 
+==============
+CSS FOR ALL
+============== 
+*/
+
+* {
+    box-sizing: border-box;
+    font-family: 'Lobster';
+}
+
+body {
+    /* background-image: linear-gradient(to right, #E9E9E9, #EBEBEB, #EFEFEF, #F4F4F4, #E7E7E7); */
+    background-image: url("../resources/background.jpg");
+}
+
+a {
+    text-decoration: none;
+}
+
+.view-tables .header {
+    margin-bottom: 50px;
+}
+
+.view-tables .main {
+    margin: 50px 0;
+    margin-left: 42px;
+    width: fit-content;
+}
+
+.header .navigation nav a {
+    margin: 0 10px;
+    width: fit-content;
+    padding: 5px;
+    color: #92140C;
+    border-radius: 10px;
+    border: 2px solid black;
+    /* background-image: linear-gradient(to right, #747274, #E7E7E7); */
+    background-image: url("../resources/background.jpg");
+}
+
+.header .navigation nav a:hover {
+    cursor: pointer;
+    transition: transform 0.5s;
+    transform: translateY(-5px);
+}
+
+
+/* 
+==============
+HEADER
+============== 
+*/
+
+.header .header-inner {
+    display: flex;
+    margin-left: 145px;
+}
+
+.header .header-inner .logo {
+    margin-right: 10px;
+    margin-top: 41px;
+}
+
+.header .header-inner .title {
+    margin: 0 10px;
+    font-size: 30px;
+    font-family: 'Satisfy', cursive;
+}
+
+.header .navigation {
+    width: fit-content;
+    margin: 20px 0;
+    margin-left: 210px;
+}
+
+.header .navigation nav {
+    display: flex;
+}
+
+.header .navigation nav form {
+    margin-top: 2px;
+}
+
+.header .navigation nav form input {
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: transparent;
+}
+
+.material-icons.md-36 {
+    font-size: 36px;
+    background: -webkit-gradient(linear, left top, right bottom, from(#2E2B62), to(#262545));
+    /* -webkit-background-clip: text; */
+    -webkit-text-fill-color: transparent;
+}
+
+.index .header {
+    display: flex;
+    width: fit-content;
+}
+
+.index .header div.username {
+    margin-left: 20px;
+    background-image: url("../resources/background.jpg");
+    font-size: 20px;
+    margin-top: 20px;
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 15px;
+    width: fit-content;
+    height: fit-content;
+}
+
+
+/* 
+==============
+MAIN
+============== 
+*/
+
+.view-tables .main .content {
+    margin-left: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: fit-content;
+    background-image: url("../resources/background.jpg");
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.view-tables .main .content table {
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.view-tables .main .content table thead {
+    border-collapse: separate;
+    border-spacing: 0 15px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.view-tables .main .content table thead th,
+.view-tables .main .content table tr td {
+    background-color: grey;
+    color: black;
+    width: fit-content;
+    text-align: center;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+.cart .main .content .cart-summary {
+    width: fit-content;
+    padding: 10px;
+    display: flex;
+    margin-left: 26px;
+}
+
+.main .content .cart-summary .sub-total {
+    margin-left: 355px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.main .content .button {
+    width: fit-content;
+    padding: 5px;
+    margin-left: 189px;
+    margin-bottom: 30px;
+    border: 2px solid;
+    color: #2E2B62;
+    border-radius: 10px;
+}
+
+.main .main-1 {
+    display: flex;
+    width: fit-content;
+}
+
+.main .main-1 .address-wrapper {
+    margin-left: 50px;
+    width: fit-content;
+}
+
+.main .main-1 .address-wrapper div {
+    width: fit-content;
+}
+
+.main .main-1 .paying-info {
+    margin-left: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 280px;
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+.main .main-1 .paying-info .field {
+    margin: 10px;
+    border: 2px solid;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.main .main-1 .paying-info .submitting {
+    margin: 20px 0 0 0;
+    height: fit-content;
+    width: 125px;
+}
+
+.main .main-1 .paying-info .submitting input[type="submit"] {
+    padding: 5px;
+    border: 2px solid;
+    border-radius: 10px;
+    background-image: url("../resources/background.jpg");
+}
+
+.main .main-1 .paying-info .submitting input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+@media only screen and (min-width :1024px) {
+    .view-tables .header {
+        display: flex;
+        align-items: center;
+    }
+    .view-tables .main {
+        margin-left: 185px;
+        margin-right: 185px;
+    }
+    .main .content .cart-summary .sub-total {
+        margin-left: 695px;
+    }
+    .main .content .button {
+        margin-left: 490px;
+    }
+}

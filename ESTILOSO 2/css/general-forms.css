@@ -1,0 +1,202 @@
+/* 
+==============
+CSS FOR ALL
+============== 
+*/
+
+* {
+    box-sizing: border-box;
+    font-family: 'Lobster';
+}
+
+body {
+    /* background-image: linear-gradient(to right, #E9E9E9, #EBEBEB, #EFEFEF, #F4F4F4, #E7E7E7); */
+    background-image: url("../resources/background.jpg");
+}
+
+a {
+    text-decoration: none;
+}
+
+.product-data .header {
+    margin-bottom: 50px;
+}
+
+.product-data .main {
+    margin: 100px 0;
+    margin-left: 145px;
+    width: fit-content;
+}
+
+.header .navigation nav a {
+    margin: 0 10px;
+    width: fit-content;
+    padding: 5px;
+    color: #92140C;
+    border-radius: 10px;
+    border: 2px solid black;
+    /* background-image: linear-gradient(to right, #747274, #E7E7E7); */
+    background-image: url("../resources/background.jpg");
+}
+
+.header .navigation nav a:hover {
+    cursor: pointer;
+    transition: transform 0.5s;
+    transform: translateY(-5px);
+}
+
+
+/* 
+==============
+HEADER
+============== 
+*/
+
+.header .header-inner {
+    display: flex;
+    margin-left: 145px;
+}
+
+.header .header-inner .logo {
+    margin-right: 10px;
+    margin-top: 41px;
+}
+
+.header .header-inner .title {
+    margin: 0 10px;
+    font-size: 30px;
+    font-family: 'Satisfy', cursive;
+}
+
+.header .navigation {
+    width: fit-content;
+    margin: 20px 0;
+    margin-left: 210px;
+}
+
+.header .navigation nav {
+    display: flex;
+}
+
+.header .navigation nav form {
+    margin-top: 2px;
+}
+
+.header .navigation nav form input {
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: transparent;
+}
+
+.material-icons.md-36 {
+    font-size: 36px;
+    background: -webkit-gradient(linear, left top, right bottom, from(#2E2B62), to(#262545));
+    /* -webkit-background-clip: text; */
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* 
+==============
+MAIN
+============== 
+*/
+
+.product-data .main form fieldset {
+    padding: 45px;
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+.product-data .main form fieldset .form-name {
+    margin-bottom: 50px;
+    margin-left: 87px;
+    font-size: 25px;
+}
+
+.product-data .main form fieldset .field {
+    margin-bottom: 55px;
+}
+
+.product-data .main form fieldset .field label {
+    font-size: 20px;
+}
+
+.product-data .main form fieldset .field input[type="text"],
+.product-data .main form fieldset .field input[type="datetime-local"],
+.product-data .main form fieldset .field select {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.product-data .main form fieldset input[type="submit"] {
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 10px;
+    background-image: url("../resources/background.jpg");
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.product-data .main form fieldset input[type="submit"]:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.field .material-icons.md-24 {
+    font-size: 24px;
+    background: -webkit-gradient(linear, left top, right bottom, from(#2E2B62), to(#262545));
+    /* -webkit-background-clip: text; */
+    -webkit-text-fill-color: transparent;
+}
+
+.product-data .main form {
+    width: fit-content;
+}
+
+@media only screen and (min-width :1024px) {
+    .product-data .main {
+        margin-left: 140px;
+    }
+    .product-data .main form {
+        margin-left: 295px;
+        margin-top: 20px;
+    }
+    .product-data .header {
+        display: flex;
+        align-items: center;
+    }
+    .product-data .header .header-inner {
+        margin-left: 185px;
+        margin-right: 185px;
+    }
+}
+
+
+/* 
+==============
+MAIN (ACTION-LIST)
+============== 
+*/
+
+.main .action-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main .action-list .action {
+    border: 2px solid black;
+    border-radius: 10px;
+    background-image: url("../resources/background.jpg");
+    padding: 10px;
+    margin: 20px 50px;
+}
+
+.main .action-list .action span {
+    color: #92140C;
+    font-size: 20px;
+}
